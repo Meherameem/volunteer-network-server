@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
 
         tasksCollection.insertOne(event)
         .then(result => {
-          res.redirect('http://localhost:3000/admin');
+          res.redirect('https://volunteer-network-236ea.web.app/admin');
           console.log("added event succesful");
         })
     })
@@ -60,7 +60,7 @@ app.get('/', (req, res) => {
       usersCollection.insertOne(user)
       .then(result => {
         console.log('user added successfully');
-        res.redirect('http://localhost:3000/specUser');
+        res.redirect('https://volunteer-network-236ea.web.app/specUser');
       })
     })
 
